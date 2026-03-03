@@ -368,7 +368,7 @@ First few rows of 2010 data:
 <h2 class="anchored" data-anchor-id="stage-3-structuring-of-visual-mappings">Stage 3: Structuring of Visual Mappings</h2>
 <p><strong>Mental Model:</strong> Choose the right geometry and aesthetics to effectively communicate your message.</p>
 <p>Let’s explore different visual approaches:</p>
-<div id="cell-stage-3-mapping-exploration" class="cell" data-fig-height="9" data-fig-width="8" data-execution_count="3">
+<div id="cell-stage-3-mapping-exploration" class="cell" data-fig-height="6" data-fig-width="8" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage 3: Structuring of Visual Mappings</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Explore different geometries and aesthetics</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -376,7 +376,7 @@ First few rows of 2010 data:
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>avgDF_2010_sorted <span class="op">=</span> avgDF_2010.sort_values(<span class="st">'totalRuns'</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create figure with subplots to compare approaches</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">9</span>))</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Approach 1: Scatter plot (not ideal for categorical data)</span></span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>,<span class="dv">0</span>].scatter(avgDF_2010_sorted.home, avgDF_2010_sorted.totalRuns)</span>
@@ -413,7 +413,7 @@ First few rows of 2010 data:
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/stage-3-mapping-exploration-output-1.png" id="stage-3-mapping-exploration" width="758" height="854" class="figure-img"></p>
+<p><img src="index_files/figure-html/stage-3-mapping-exploration-output-1.png" id="stage-3-mapping-exploration" width="758" height="566" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -526,11 +526,11 @@ Colorado is 20.8% above league average</code></pre>
 <h2 class="anchored" data-anchor-id="advanced-object-oriented-techniques">Advanced Object-Oriented Techniques</h2>
 <p><strong>Mental Model:</strong> Use object-oriented matplotlib to create complex, reusable visualizations.</p>
 <p>Let’s create a comprehensive comparison between 2010 and 2021:</p>
-<div id="cell-advanced-oo-techniques" class="cell" data-fig-height="9" data-fig-width="14" data-execution_count="5">
+<div id="cell-advanced-oo-techniques" class="cell" data-fig-height="6" data-fig-width="10" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/advanced-oo-techniques-output-1.png" id="advanced-oo-techniques" width="1329" height="877" class="figure-img"></p>
+<p><img src="index_files/figure-html/advanced-oo-techniques-output-1.png" id="advanced-oo-techniques" width="948" height="587" class="figure-img"></p>
 </figure>
 </div>
 </div>

@@ -220,7 +220,7 @@ Let's explore different visual approaches:
 #| label: stage-3-mapping-exploration
 #| echo: true
 #| fig-width: 8
-#| fig-height: 9
+#| fig-height: 6
 #| out-width: "100%"
 
 # Stage 3: Structuring of Visual Mappings
@@ -230,7 +230,7 @@ Let's explore different visual approaches:
 avgDF_2010_sorted = avgDF_2010.sort_values('totalRuns', ascending=True)
 
 # Create figure with subplots to compare approaches
-fig, axes = plt.subplots(2, 2, figsize=(8, 9))
+fig, axes = plt.subplots(2, 2, figsize=(8, 6))
 
 # Approach 1: Scatter plot (not ideal for categorical data)
 axes[0,0].scatter(avgDF_2010_sorted.home, avgDF_2010_sorted.totalRuns)
@@ -367,11 +367,11 @@ Let's create a comprehensive comparison between 2010 and 2021:
 ```{python}
 #| label: advanced-oo-techniques
 #| echo: false
-#| fig-width: 14
-#| fig-height: 9
+#| fig-width: 10
+#| fig-height: 6
 
 # Advanced Object-Oriented Techniques: two-facet comparison 2010 vs 2021
-fig, axes = plt.subplots(1, 2, figsize=(14, 9), sharey=False)
+fig, axes = plt.subplots(1, 2, figsize=(10, 6), sharey=False)
 
 datasets = [
     (avgDF_2010.sort_values('totalRuns', ascending=True), "2010 Season"),
