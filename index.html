@@ -74,12 +74,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 /* Scale figures to viewport so charts fit without scrolling */
 .quarto-figure figure img,
 .quarto-plot img,
-figure img {
-  max-width: 100%;
-  max-height: 65vh;
-  height: auto;
-  width: auto;
+figure img,
+.figure-img,
+.figure img {
+  max-width: 100% !important;
+  max-height: 55vh !important;
+  height: auto !important;
+  width: auto !important;
   object-fit: contain;
+}
+/* Force Advanced 2010 vs 2021 chart to fit in one viewport */
+#advanced-oo-techniques,
+img#advanced-oo-techniques {
+  max-height: 50vh !important;
+  width: auto !important;
+  height: auto !important;
 }
 </style>
 
@@ -538,11 +547,11 @@ Colorado is 20.8% above league average</code></pre>
 <h2 class="anchored" data-anchor-id="advanced-object-oriented-techniques">Advanced Object-Oriented Techniques</h2>
 <p><strong>Mental Model:</strong> Use object-oriented matplotlib to create complex, reusable visualizations.</p>
 <p>Let’s create a comprehensive comparison between 2010 and 2021:</p>
-<div id="cell-advanced-oo-techniques" class="cell" data-fig-height="3" data-fig-width="8" data-execution_count="5">
+<div id="cell-advanced-oo-techniques" class="cell" data-fig-height="2.5" data-fig-width="7" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/advanced-oo-techniques-output-1.png" id="advanced-oo-techniques" width="758" height="300" class="figure-img"></p>
+<p><img src="index_files/figure-html/advanced-oo-techniques-output-1.png" id="advanced-oo-techniques" width="663" height="251" class="figure-img"></p>
 </figure>
 </div>
 </div>

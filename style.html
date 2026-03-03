@@ -2,11 +2,20 @@
 /* Scale figures to viewport so charts fit without scrolling */
 .quarto-figure figure img,
 .quarto-plot img,
-figure img {
-  max-width: 100%;
-  max-height: 65vh;
-  height: auto;
-  width: auto;
+figure img,
+.figure-img,
+.figure img {
+  max-width: 100% !important;
+  max-height: 55vh !important;
+  height: auto !important;
+  width: auto !important;
   object-fit: contain;
+}
+/* Force Advanced 2010 vs 2021 chart to fit in one viewport */
+#advanced-oo-techniques,
+img#advanced-oo-techniques {
+  max-height: 50vh !important;
+  width: auto !important;
+  height: auto !important;
 }
 </style>

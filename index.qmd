@@ -371,12 +371,12 @@ Let's create a comprehensive comparison between 2010 and 2021:
 ```{python}
 #| label: advanced-oo-techniques
 #| echo: false
-#| fig-width: 8
-#| fig-height: 3
+#| fig-width: 7
+#| fig-height: 2.5
 #| out-width: "100%"
 
 # Advanced Object-Oriented Techniques: two-facet comparison 2010 vs 2021
-fig, axes = plt.subplots(1, 2, figsize=(8, 3), sharey=False)
+fig, axes = plt.subplots(1, 2, figsize=(7, 2.5), sharey=False)
 
 datasets = [
     (avgDF_2010.sort_values('totalRuns', ascending=True), "2010 Season"),
