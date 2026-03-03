@@ -2,7 +2,8 @@
 title: "Object-Oriented Matplotlib Challenge"
 subtitle: "Mastering the Four Stages of Data Visualization"
 format:
-  html: default
+  html:
+    include-in-header: style.html
 execute:
   echo: true
   eval: true
@@ -220,7 +221,7 @@ Let's explore different visual approaches:
 #| label: stage-3-mapping-exploration
 #| echo: true
 #| fig-width: 8
-#| fig-height: 6
+#| fig-height: 4
 #| out-width: "100%"
 
 # Stage 3: Structuring of Visual Mappings
@@ -230,7 +231,7 @@ Let's explore different visual approaches:
 avgDF_2010_sorted = avgDF_2010.sort_values('totalRuns', ascending=True)
 
 # Create figure with subplots to compare approaches
-fig, axes = plt.subplots(2, 2, figsize=(8, 6))
+fig, axes = plt.subplots(2, 2, figsize=(8, 4))
 
 # Approach 1: Scatter plot (not ideal for categorical data)
 axes[0,0].scatter(avgDF_2010_sorted.home, avgDF_2010_sorted.totalRuns)
@@ -292,6 +293,9 @@ Let's create a publication-ready visualization:
 ```{python}
 #| label: stage-4-formatting
 #| echo: true
+#| fig-width: 8
+#| fig-height: 4
+#| out-width: "100%"
 
 # Stage 4: Formatting for Your Audience
 # Create a professional, publication-ready visualization
@@ -300,7 +304,7 @@ Let's create a publication-ready visualization:
 plt.style.use("seaborn-v0_8-whitegrid")
 
 # Create the main visualization
-fig, ax = plt.subplots(figsize=(8, 6))
+fig, ax = plt.subplots(figsize=(8, 4))
 
 # Create color array for highlighting Colorado
 colorado_colors = ["darkorchid" if stadium == "COL" else "lightgrey" 
@@ -368,10 +372,11 @@ Let's create a comprehensive comparison between 2010 and 2021:
 #| label: advanced-oo-techniques
 #| echo: false
 #| fig-width: 10
-#| fig-height: 6
+#| fig-height: 4
+#| out-width: "100%"
 
 # Advanced Object-Oriented Techniques: two-facet comparison 2010 vs 2021
-fig, axes = plt.subplots(1, 2, figsize=(10, 6), sharey=False)
+fig, axes = plt.subplots(1, 2, figsize=(10, 4), sharey=False)
 
 datasets = [
     (avgDF_2010.sort_values('totalRuns', ascending=True), "2010 Season"),
