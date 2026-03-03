@@ -371,12 +371,12 @@ Let's create a comprehensive comparison between 2010 and 2021:
 ```{python}
 #| label: advanced-oo-techniques
 #| echo: false
-#| fig-width: 10
-#| fig-height: 4
+#| fig-width: 8
+#| fig-height: 3
 #| out-width: "100%"
 
 # Advanced Object-Oriented Techniques: two-facet comparison 2010 vs 2021
-fig, axes = plt.subplots(1, 2, figsize=(10, 4), sharey=False)
+fig, axes = plt.subplots(1, 2, figsize=(8, 3), sharey=False)
 
 datasets = [
     (avgDF_2010.sort_values('totalRuns', ascending=True), "2010 Season"),
@@ -393,16 +393,16 @@ for ax, (df_sorted, year_label) in zip(axes, datasets):
                 xytext=(col_val + 0.1, col_idx), va='center',
                 fontsize=9, color='darkorchid', fontweight='bold')
 
-    ax.set_title(year_label, fontsize=13, fontweight='bold', pad=10)
-    ax.set_xlabel("Average Runs Per Game", fontsize=10)
-    ax.set_ylabel("Stadium", fontsize=10)
-    ax.tick_params(axis='y', labelsize=8)
+    ax.set_title(year_label, fontsize=11, fontweight='bold', pad=6)
+    ax.set_xlabel("Average Runs Per Game", fontsize=9)
+    ax.set_ylabel("Stadium", fontsize=9)
+    ax.tick_params(axis='y', labelsize=6)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.grid(axis='x', linestyle='--', alpha=0.4)
 
 fig.suptitle("Coors Field (COL) Among the Most Run-Friendly Parks in MLB: 2010 vs 2021",
-             fontsize=15, fontweight='bold', y=1.01)
+             fontsize=12, fontweight='bold', y=1.02)
 plt.tight_layout()
 plt.show()
 ```
